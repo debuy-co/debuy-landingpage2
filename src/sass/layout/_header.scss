@@ -1,0 +1,73 @@
+.header {
+  background-color: $color-grey-dark-1;
+
+  padding: 4rem;
+  //padding-top: 4rem;
+
+  display: grid;
+  grid-column-gap: 5rem;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: max-content max-content 1fr;
+
+  &__logo-box {
+    justify-self: left; //this center on X axis
+    align-self: center; //this to center on Y axis
+  }
+
+  &__logo {
+    height: 4rem;
+  }
+
+  &__logo-name {
+    height: 4rem;
+  }
+
+  &__navigation {
+    list-style: none;
+    display: grid; //in this case flexbox would have been a good choice to layout the elements but we will still use grids because it is a great option to have some space between the elements (in flex box we would need to use margin right and in the last element we would need to say no margin)
+
+    grid-template-columns: repeat(4, 1fr);
+
+    &-link:link,
+    &-link:visited {
+      font-size: 1.4rem;
+      color: #777;
+      text-decoration: none;
+      //text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      display: block;
+      transition: all 0.2s;
+    }
+
+    &-link:hover,
+    &-link:active {
+      background-color: rgba(#fff, 0.05);
+      transform: translateY(-3px);
+    }
+  }
+
+  &__login {
+    list-style: none;
+    justify-self: right;
+    &-link:link,
+    &-link:visited {
+      font-size: 1.4rem;
+      color: #777;
+      text-decoration: none;
+      //text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      display: block;
+      transition: all 0.5s;
+    }
+
+    &-link:hover,
+    &-link:active {
+      background-color: rgba(#c69a75, 1);
+      color: $color-grey-dark-2;
+      transform: translateY(-3px);
+    }
+  }
+}

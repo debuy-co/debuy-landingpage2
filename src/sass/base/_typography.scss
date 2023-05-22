@@ -1,0 +1,11 @@
+@import url("http://fonts.googleapis.com/css?family=Kelson:100,300,400,700,900");
+
+//we moved this part, and only this part of "body", to typography because it included these kind of elements
+body {
+  /*here it means we select Lato font family and if not available we select sans-serif*/
+  font-family: "Kelson", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7; /*means that the line height is 1.7 bigger than the predefinied line height*/
+  color: #777;
+}
