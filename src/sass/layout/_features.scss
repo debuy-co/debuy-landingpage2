@@ -1,0 +1,25 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); //facciamo 4 colonne
+  //grid-gap: 6rem;
+
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr; //this only have a column
+  grid-row-gap: 1.5rem;
+  justify-items: center; //centrati tutti quanti
+  border: solid 0.1rem;
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}
