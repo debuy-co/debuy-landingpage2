@@ -1,0 +1,55 @@
+.contact-us {
+  //padding: 5rem; //cosi gli mettiamo un contorno tutto attorno
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-us-box {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-grey-dark-1, 0.99) 0%,
+      rgba($color-grey-dark-1, 0.9) 50%,
+      transparent 100%
+    ),
+    url(../../assets/img/background_block.jpg);
+  //box-shadow: 1.5rem 1.5rem 4rem rgba($color-grey-light-2, 0.2);
+
+  background-size: cover;
+  //padding-top: 5rem;
+
+  &__form {
+    width: 35%; //so it does not take the entire width available
+  }
+}
+
+.form {
+  padding: 2rem;
+
+  &__group {
+    padding: 1rem 0;
+  }
+  &__input {
+    font-size: 1.5rem;
+
+    //by default form don't inherit the font properties, so we need to specifically inherit it
+    color: inherit;
+    font-family: inherit;
+
+    padding: 1.5rem 2rem; //in forms we always give a bit more padding on the sides
+    border-radius: 2px;
+    background-color: rgba(white, 0.5);
+    border: none;
+    width: 90%;
+    display: block;
+    transition: all 1s; //to give the nice effect when go into focus mode
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block; //we have to set this otherwise we cannot use the box properties (margintop)
+    transition: all 0.3s;
+  }
+}

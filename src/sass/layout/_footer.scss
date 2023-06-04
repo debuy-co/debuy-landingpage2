@@ -1,0 +1,21 @@
+.footer {
+  background-color: inherit;
+  display: grid;
+
+  &__logo {
+    width: 22rem;
+    height: auto;
+    justify-self: center;
+  }
+}
+
+.copyright {
+  border-top: 1px solid $color-grey-light-2;
+  display: inline-block; //in this way the margin will only be for the size of the element itself
+  padding: 1rem;
+
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  margin-top: 6rem;
+  justify-self: center;
+}

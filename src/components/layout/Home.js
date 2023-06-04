@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "../../assets/img/aron.jpg";
-import Image2 from "../../assets/img/nik-removebg-preview.png";
 
 function Home() {
   return (
@@ -17,10 +15,11 @@ function Home() {
       </h5>
       <div class="vl"></div>
 
+      {/*
       <div className="home__image-box">
         <img src={Image2} alt="Abstract" className="home__image" />{" "}
-        {/*TODO: da sistemare con una immagine piu appropriata*/}
       </div>
+  */}
       <button className="btn-light btn-light-home">more info</button>
       <button className="btn-dark btn-dark-home">more info</button>
     </section>
