@@ -2,7 +2,12 @@ import React from "react";
 import logo from "../../assets/logo/logo_transparent.png";
 import logoName from "../../assets/logo/logoname_transparent.png";
 
-function Header() {
+function Header(props) {
+  // function handleClick(e) {
+  //   e.preventDefault(); //most probably need this one as the default behavior of an anchor is to refresh the page
+  //   console.log("cliccato");
+  // }
+
   return (
     <header className="header">
       <div className="header__logo-box">
@@ -37,7 +42,11 @@ function Header() {
       </ul>
 
       <li className="header__login">
-        <a href="#1" className="header__login-link">
+        <a
+          href="#1"
+          className="header__login-link"
+          onClick={props.onLoginClick}
+        >
           Login &rarr;
         </a>
       </li>

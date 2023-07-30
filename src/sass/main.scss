@@ -15,14 +15,17 @@
 @import "./components/button";
 
 /*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-@import "./layout/header";
-@import "./layout/home";
-@import "./layout/features";
-@import "./layout/contactus";
-@import "./layout/footer";
-
-/*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
+@import "./pages/header";
+@import "./pages/home";
+@import "./pages/features";
+@import "./pages/contactus";
+@import "./pages/footer";
+
+@import "./pages/login";
+
+/*--------------------------------------------------------------
+# Utils
+--------------------------------------------------------------*/
+@import "./utils/modal";

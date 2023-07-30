@@ -19,5 +19,5 @@ body {
 
 .container {
   background-color: $color-grey-dark-1;
-  padding: 4rem;
+  padding: 4rem; //per il momento lo togliamo altrimenti il background effect che viene messo nel modal component da fastidio
 }
