@@ -12,12 +12,6 @@ function Heading() {
       <h1 className="heading-1 home__order2">{title2}</h1>
       <h5 className="heading-5 home__order3">{title3}</h5>
       <div class="vl"></div>
-
-      {/*
-      <div className="home__image-box">
-        <img src={Image2} alt="Abstract" className="home__image" />{" "}
-      </div>
-  */}
       <button className="btn-light btn-light-home">more info</button>
       <button className="btn-dark btn-dark-home">more info</button>
     </section>

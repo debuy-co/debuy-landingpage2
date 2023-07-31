@@ -2,41 +2,43 @@ function Login() {
   return (
     <section className="log-in">
       <div className="log-in__header">
-        <h3 className="log-in__header__title">Sign In</h3>
         <span class="log-close">&times;</span>
       </div>
 
-      <form className="log-in__form">
-        <div className="Auth-form-content">
-          <div className="form-group mt-3">
-            <label>Email address</label>
-            <input
-              type="email"
-              className="form-control mt-1"
-              placeholder="Enter email"
-            />
-          </div>
-          <div className="form-group mt-3">
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control mt-1"
-              placeholder="Enter password"
-            />
-          </div>
-          <div className="d-grid gap-2 mt-3">
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </div>
-          <p className="text-center mt-2">
-            Forgot <a href="#">password?</a>
-          </p>
+      <form action="#" className="log-in__form">
+        <div className="log-in__form__group">
+          <input
+            type="text"
+            className="input-dark"
+            placeholder="Username or Email"
+            id="username"
+            required
+          />
         </div>
+        <div className="log-in__form__group">
+          <input
+            type="password"
+            className="input-dark"
+            placeholder="Password"
+            id="password"
+            required
+          />
+        </div>
+
+        {/*it is important that it is a button and not just an anchor element so that the form can recognize it and use it when submitting it*/}
+        <button className="btn-dark">Login</button>
+
+        <h5>
+          Forgot <a href="#">password?</a>
+        </h5>
       </form>
 
+      <div class="ol"></div>
       <div className="log-in__redirecting">
-        Not registered yet? <span className="link-primary">Sign Up</span>
+        Not registered yet?{" "}
+        <a href="#1" className="log-in__redirecting-navigation-link">
+          Contact Us
+        </a>
       </div>
     </section>
   );

@@ -60,7 +60,7 @@
 
     &-link:hover,
     &-link:active {
-      background-color: rgba(#c69a75, 1);
+      background-color: rgba($color-primary, 1);
       color: $color-grey-dark-2;
       transform: translateY(-3px);
     }

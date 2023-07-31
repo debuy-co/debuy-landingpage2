@@ -1,40 +1,50 @@
 .log-in {
-  display: block;
-  grid-column-gap: 1rem; //no so se effettivamente serve
+  display: grid;
+  grid-column-gap: 5rem;
+  //vogliamo due colonne e 5 righe (per le righe le creera in maniera implicita)
+  grid-template-columns: 1fr 1fr;
 
-  //facciamo due colonne e 3 righe
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  &__header {
+    grid-column: 1 / -1;
+  }
 
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  &__form {
+    grid-column: 2/-1;
+
+    &__group {
+      padding: 1rem 0;
+    }
+  }
+
+  &__redirecting {
+    text-align: center;
+
+    padding: 2rem 2rem 1rem;
+    grid-column: 1/-1;
+
+    &-navigation-link:link,
+    &-navigation-link:visited {
+      color: #777;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      display: flexbox; //in this way it will stay one after the other
+      transition: all 0.2s;
+    }
+
+    &-navigation-link:hover,
+    &-navigation-link:active {
+      background-color: rgba($color-primary, 1);
+      color: $color-grey-dark-2;
+      transform: translateY(-3px);
+    }
+  }
 }
 
-.Auth-form {
-  width: 420px;
-  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.Auth-form-content {
-  padding-left: 12%;
-  padding-right: 12%;
-}
-
-.Auth-form-title {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 24px;
-  color: rgb(34, 34, 34);
-  font-weight: 800;
-}
-
-label {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgb(34, 34, 34);
+//it means horizontal line
+.ol {
+  padding: 1rem;
+  margin: 0 1rem;
+  grid-column: 1/-1;
+  border-bottom: 1px solid $color-grey-dark-2;
 }
