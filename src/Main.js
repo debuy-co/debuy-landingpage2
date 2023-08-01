@@ -10,20 +10,25 @@ import Modal from "./utils/Modal";
 function Main() {
   const [loginBoxIsVisible, setLoginBoxIsVisible] = useState(false);
 
-  function changeBoxHandler(e) {
+  function showLoginBox(e) {
     setLoginBoxIsVisible(true);
     console.log(loginBoxIsVisible); //TODO: vedere come mai questo valore ritorna false
+  }
+
+  //TODO: vedere come far funzionare questa funzione
+  function hideLoginBox(e) {
+    setLoginBoxIsVisible(false);
   }
 
   return (
     <body className="container">
       {loginBoxIsVisible && (
         <Modal>
-          <Login />
+          <Login onButtonclick={hideLoginBox} />
         </Modal>
       )}
 
-      <Header onLoginClick={changeBoxHandler} />
+      <Header onLoginClick={showLoginBox} />
       <Heading />
       <Features />
       <ContactUs />

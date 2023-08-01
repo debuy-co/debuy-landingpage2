@@ -1,8 +1,10 @@
-function Login() {
+function Login(props) {
   return (
     <section className="log-in">
       <div className="log-in__header">
-        <span class="log-close">&times;</span>
+        <button type="button" class="btn-close" onClick={props.onButtonclick}>
+          <span class="icon-cross"></span>
+        </button>
       </div>
 
       <form action="#" className="log-in__form">

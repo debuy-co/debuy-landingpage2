@@ -6,6 +6,12 @@
 
   &__header {
     grid-column: 1 / -1;
+
+    &-close {
+      position: relative;
+      top: -5px;
+      left: -5px;
+    }
   }
 
   &__form {
