@@ -15,15 +15,15 @@ function Main() {
     console.log(loginBoxIsVisible); //TODO: vedere come mai questo valore ritorna false
   }
 
-  //TODO: vedere come far funzionare questa funzione
   function hideLoginBox(e) {
     setLoginBoxIsVisible(false);
   }
 
   return (
     <body className="container">
+      {/*here I add the function "hideLoginBox" to both Modal and Login component because both of them need to have this capability, one for closing by clicking on the background the other by clicking on the X button*/}
       {loginBoxIsVisible && (
-        <Modal>
+        <Modal onBackgroundclick={hideLoginBox}>
           <Login onButtonclick={hideLoginBox} />
         </Modal>
       )}

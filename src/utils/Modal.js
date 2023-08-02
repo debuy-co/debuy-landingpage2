@@ -5,7 +5,7 @@ import React from "react";
 function Modal(props) {
   return (
     <>
-      <div className="backdrop"></div>
+      <div className="backdrop" onClick={props.onBackgroundclick}></div>
       <dialog open className="modal centered">
         {props.children}
       </dialog>
