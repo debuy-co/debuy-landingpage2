@@ -1,4 +1,26 @@
+import { useState } from "react";
+
 function Login(props) {
+  const [enteredUsername, setUserName] = useState("");
+  const [enteredPassword, setPassword] = useState("");
+
+  function usernameChangeHandler(event) {
+    setUserName(event.target.value);
+  }
+
+  function passwordChangeHandler(event) {
+    setPassword(event.target.value);
+  }
+
+  function submitHandler(event) {
+    event.preventDefault(); //because by default the submitHandler will send a http request to the page and make it upload the page, which we don't want.
+    const postData = {
+      username: enteredUsername,
+      password: enteredPassword,
+    };
+    console.log(postData);
+  }
+
   return (
     <section className="log-in">
       <div className="log-in__header">
@@ -7,7 +29,7 @@ function Login(props) {
         </button>
       </div>
 
-      <form action="#" className="log-in__form">
+      <form action="#" className="log-in__form" onSubmit={submitHandler}>
         <div className="log-in__form__group">
           <input
             type="text"
@@ -15,6 +37,7 @@ function Login(props) {
             placeholder="Username or Email"
             id="username"
             required
+            onChange={usernameChangeHandler}
           />
         </div>
         <div className="log-in__form__group">
@@ -24,6 +47,7 @@ function Login(props) {
             placeholder="Password"
             id="password"
             required
+            onChange={passwordChangeHandler}
           />
         </div>
 
