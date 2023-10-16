@@ -36,7 +36,7 @@ function Header(props) {
 
         <li className="header__navigation-item">
           <a href="#1" className="header__navigation-link">
-            5th paragraph
+            Insigths
           </a>
         </li>
       </ul>
