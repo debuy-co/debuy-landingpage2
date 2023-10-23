@@ -1,12 +1,26 @@
-import Main from "./Main";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Insights from "./pages/Insights";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; //package imported to create our routes and use them
 
 const router = createBrowserRouter([
+  //this route is the main one, it acts as a parent route
   {
-    path: "/", //this is the generic path , the one tha corrispond to the domain
-    element: <Main />,
-  } /*this routed object takes a couple of property to configure the route: the path and the component that shall be loaded when that path is reached*/,
-]); //this function is an array of routes objects
+    path: "/",
+    element: <Header />, //here we add the element that shall wrap around the other paths
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+
+      {
+        path: "/Insights",
+        element: <Insights />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return <RouterProvider router={router} />;

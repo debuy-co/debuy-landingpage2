@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Header from "./pages/Home/Header";
-import Heading from "./pages/Home/Heading";
-import Features from "./pages/Home/Features";
-import ContactUs from "./pages/Home/ContactUs";
-import Footer from "./pages/Home/Footer";
-import Login from "./pages/Login";
-import Modal from "./utils/Modal";
+import Header from "../components/Header";
+import Heading from "../components/Heading";
+import Features from "../components/Features";
+import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
+import Login from "./Login";
+import Modal from "../utils/Modal";
 
-function Main() {
+function Home() {
   const [loginBoxIsVisible, setLoginBoxIsVisible] = useState(false);
 
   function showLoginBox(e) {
@@ -37,4 +37,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

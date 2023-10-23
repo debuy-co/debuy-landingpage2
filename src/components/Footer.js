@@ -1,5 +1,5 @@
 import React from "react";
-import fullLogoHigh from "../../assets/logo/full_transparent_high.png";
+import fullLogoHigh from "../assets/logo/full_transparent_high.png";
 
 function Footer() {
   return (
