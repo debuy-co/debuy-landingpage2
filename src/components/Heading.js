@@ -2,9 +2,9 @@ import React from "react";
 
 function Heading() {
   const title1 = "Why Debuy ?";
-  const title2 = "Decentralized Contracts";
+  const title2 = "Decoding Procurement";
   const title3 =
-    "DEBUY is on a mission to revolutionize the procurement industry through the use of web3 technologies. We strive to provide a decentralized and secure platform that empowers businesses and individuals to buy and sell goods and services without the need for intermediaries. Our goal is to foster a more efficient, transparent, and inclusive procurement ecosystem that benefits all participants.";
+    "At Debuy, our vision is to transform the landscape of procurement through autonomous purchasing solutions. We strive to empower businesses of all sizes with cutting-edge technology, fostering a future where procurement processes are streamlined, efficient, and intelligent. By embracing innovation and automation, we envision a world where businesses can focus on their core operations, confident in the knowledge that their purchasing processes are optimized for success.";
 
   return (
     <section className="home">
@@ -13,7 +13,8 @@ function Heading() {
       <h5 className="heading-5 home__order3">{title3}</h5>
       <div class="vl"></div>
       <button className="btn-light btn-light-home">more info</button>
-      <button className="btn-dark btn-dark-home">more info</button>
+      {/* I think at the moment we don't need this additional buttom 
+      <button className="btn-dark btn-dark-home">more info</button>*/}
     </section>
   );
 }

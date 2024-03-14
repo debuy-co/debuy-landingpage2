@@ -1,0 +1,58 @@
+.solution-app {
+  header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+}
+.solution {
+  max-width: 800px;
+  margin: 20px auto;
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .solution-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .solution-card {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 48%; /* Adjust as needed */
+    margin: 15px 0;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-title {
+      width: 45%; /* Adjust as needed */
+    }
+
+    .card-description {
+      width: 50%; /* Adjust as needed */
+    }
+
+    h3 {
+      color: #3498db;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import Login from "./Login";
 import Modal from "../utils/Modal";
+import Solutions from "../components/Solutions";
 
 function Home() {
   const [loginBoxIsVisible, setLoginBoxIsVisible] = useState(false);
@@ -31,6 +32,7 @@ function Home() {
       <Header onLoginClick={showLoginBox} />
       <Heading />
       <Features />
+      <Solutions />
       <ContactUs />
       <Footer />
     </body>

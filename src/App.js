@@ -8,7 +8,7 @@ const router = createBrowserRouter([
   //this route is the main one, it acts as a parent route
   {
     path: "/",
-    element: <Header />,
+    //element: <Header />, //in questo momento lo tolgo
     errorElement: <ErrorPage />,
     children: [
       {

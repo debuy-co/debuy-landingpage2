@@ -1,7 +1,7 @@
 .log-in {
   display: grid;
   grid-column-gap: 5rem;
-  //vogliamo due colonne e 5 righe (per le righe le creera in maniera implicita)
+  //vogliamo due colonne e 3 righe (per le righe le creera in maniera implicita)
   grid-template-columns: 1fr 1fr;
 
   &__header {

@@ -11,8 +11,9 @@
   padding-top: 10rem;
   display: grid;
   grid-column-gap: 5rem;
+  align-items: flex-start; //in order to have them not to expand on all available space
 
-  grid-template-rows: auto auto 1fr min-content;
+  grid-template-rows: auto auto max-content min-content;
   grid-template-columns: repeat(
     3,
     20%
@@ -21,17 +22,19 @@
   &__order1 {
     grid-column: 1/3;
     align-self: flex-end;
+    padding-left: 2rem;
   }
 
   &__order2 {
     grid-column: 1/4;
     padding-top: 2rem;
+    padding-left: 2rem;
   }
 
   &__order3 {
     grid-column: 2/4;
     padding-top: 4rem;
-    padding-left: 2rem;
+    //padding-left: 2rem; questo va tolto in modo che sia in linea con il bottone
   }
 
   //vl means vertical line
@@ -41,7 +44,7 @@
     grid-column: 1/2;
 
     border-right: 1px solid $color-grey-dark-2;
-    height: 500px;
+    height: 30vh;
   }
 
   .btn-light-home {

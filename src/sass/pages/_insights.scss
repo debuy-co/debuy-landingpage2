@@ -1,0 +1,40 @@
+/* App.scss */
+
+.insights {
+  text-align: center;
+
+  .app-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .key-features,
+  .benefits,
+  .testimonials {
+    padding: 20px;
+  }
+
+  .call-to-action {
+    background-color: #282c34;
+    padding: 30px;
+    color: white;
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
